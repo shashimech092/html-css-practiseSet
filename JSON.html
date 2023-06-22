@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON in JS</title>
+</head>
+
+<body>
+    <!-- In this tutorial, we are going to learn about the concept of JSON in JavaScript. JSON is a format for storing and transporting data. JSON is often used when data is sent from a server to a web page.
+
+What is JSON?
+
+JSON stands for JavaScript Object Notation
+JSON is a lightweight data-interchange format
+JSON is language independent
+JSON is "self-describing" and easy to understand -->
+
+    <!-- The JSON syntax is derived from JavaScript object notation syntax, but the JSON format is text only. The code for
+    reading and generating JSON data can be written in any programming language. -->
+</body>
+
+<script>
+let jsonObj = {
+            name: "Harry",
+            channel: "CWH",
+            friend: "Rohan Das",
+            food: "Bhindi" //#bhindiLoverSquad
+        } 
+        console.log(jsonObj)
+
+        let myJsonStr = JSON.stringify(jsonObj);
+console.log(myJsonStr);
+
+myJsonStr = myJsonStr.replace('Harry', 'Larry');
+console.log(myJsonStr)
+
+//Now to convert this string again into an object, we can write as follows-
+newJsonObj = JSON.parse(myJsonStr);
+console.log(newJsonObj)
+</script>
+
+</html>

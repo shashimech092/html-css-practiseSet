@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions in Javascript</title>
+</head>
+<body>
+    <script src="/tut32.js"></script>
+<script>
+// let name = "Harry";
+// let name1 = "Shubham";
+// let name2 = "Rohan";
+// let name3 = "Sagar";
+// console.log(name + 'is a good boy');
+// console.log(name1 + 'is a good boy');
+// console.log(name2 + 'is a good boy');
+// console.log(name3 + 'is a good boy');
+
+// We can write the above code with the help of JavaScript functions as follows-
+
+let name = "Harry";
+let name1 = "Shubham";
+let name2 = "Rohan";
+let name3 = "Sagar";
+let greetText = "Good Morning";
+greet(name, greetText);
+greet(name1, greetText);
+greet(name2, greetText);
+greet(name3, greetText);
+function greet(name, greetText){
+          console.log(name + " is a good boy");
+          console.log(greetText + " " + name);
+}
+// let returnVal = greet(name3);
+// console.log(returnVal)
+
+function sum(a,b,c){
+    let d = a + b + c;
+    return d;
+}
+let returnVal = sum(1,4,3);
+console.log(returnVal)
+</script>
+    
+</body>
+</html>
